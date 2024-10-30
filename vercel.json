@@ -1,13 +1,8 @@
 {
-    "builds":[{
-        "src":"farhod/wsgi.py",
-        "use":"@vercel/python",
-        "config":{"maxLambdaSize":"15mb", "runtime":"python3.12"}
-    }],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"farhod/wsgi.py"
-        }
-    ]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/wsgi.py"
+    }
+  ]
 }
